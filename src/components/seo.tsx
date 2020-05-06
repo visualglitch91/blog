@@ -58,15 +58,15 @@ function SEO({ description, lang, meta, title: _title }) {
         },
         {
           property: `og:image`,
-          content: `https://visualglitch91.netlify.com${shareImgSrc}`,
+          content: `https://visualglitch91.netlify.app${shareImgSrc}`,
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:image`,
-          content: `https://visualglitch91.netlify.com${shareImgSrc}`,
+          content: `https://visualglitch91.netlify.app${shareImgSrc}`,
         },
         {
           name: `twitter:creator`,
