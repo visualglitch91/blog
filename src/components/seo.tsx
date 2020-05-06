@@ -11,7 +11,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import shareImgSrc from "./share.jpg"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title: _title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -29,17 +29,16 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const title = _title
+    ? `${_title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={
-        title
-          ? `${title} | ${site.siteMetadata.title}`
-          : site.siteMetadata.title
-      }
+      title={title}
       meta={[
         {
           name: `description`,
@@ -66,7 +65,7 @@ function SEO({ description, lang, meta, title }) {
           content: `summary_large_image`,
         },
         {
-          property: `twitter:image`,
+          name: `twitter:image`,
           content: `https://visualglitch91.netlify.com${shareImgSrc}`,
         },
         {
