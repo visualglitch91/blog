@@ -15,7 +15,7 @@ const ImageLink = styled.a`
   font-size: 0;
 `
 
-function Layout({ location, title, children }) {
+function Layout({ head = true, children }) {
   return (
     <>
       <GlobalCSS />
@@ -33,11 +33,16 @@ function Layout({ location, title, children }) {
           </ImageLink>
         </Center>
         <main>{children}</main>
-        <Center>
-          <ImageLink href="https://twitter.com/visualglitch91" target="_blank">
-            <img src={headSrc} alt="" height="200px" />
-          </ImageLink>
-        </Center>
+        {head && (
+          <Center style={{ marginTop: "2rem" }}>
+            <ImageLink
+              href="https://twitter.com/visualglitch91"
+              target="_blank"
+            >
+              <img src={headSrc} alt="" height="200px" />
+            </ImageLink>
+          </Center>
+        )}
       </div>
     </>
   )
