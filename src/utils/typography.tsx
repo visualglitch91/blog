@@ -2,9 +2,9 @@ import Typography from "typography"
 import gray from "gray-percentage"
 import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 
-export const primaryColor = "#8e44ad"
-export const secondaryColor = "#01cdfe"
+export const primaryColor = "#01cdfe"
 
+//@ts-ignore
 const typography = new Typography({
   title: "visualglitch91",
   baseFontSize: "16px",
@@ -35,8 +35,8 @@ const typography = new Typography({
       color: gray(41),
       fontStyle: "italic",
       paddingLeft: rhythm(13 / 16),
-      marginLeft: rhythm(-1),
-      borderLeft: `${rhythm(3 / 16)} solid ${gray(10)}`,
+      margin: 0,
+      borderLeft: `${rhythm(3 / 16)} solid ${primaryColor}`,
     },
     "blockquote > :last-child": {
       marginBottom: 0,
