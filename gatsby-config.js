@@ -3,9 +3,9 @@ module.exports = {
     title: `visualglitch91`,
     author: {
       name: `@visualglitch91`,
-      summary: `bela, tatuada e do bar | gata trans movida a vegetais e comunismo`,
+      summary: `bela, tatuada e do bar`,
     },
-    description: `bela, tatuada e do bar | gata trans movida a vegetais e comunismo`,
+    description: `bela, tatuada e do bar`,
     siteUrl: `https://visualglitch91.netlify.app`,
     social: {
       twitter: `visualglitch91`,
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-159209586-3`,
       },
     },
     `gatsby-plugin-feed`,
@@ -83,6 +83,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-emotion`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

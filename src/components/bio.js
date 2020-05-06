@@ -57,7 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Escrito por{" "}
+        escrito por{" "}
         <strong>
           <a href={`https://twitter.com/${social.twitter}`}>{social.twitter}</a>
         </strong>

@@ -1,7 +1,7 @@
 ---
 title: Dicas de sobrevivência para minorias em TI
 date: "2020-03-18T22:12:03.284Z"
-description: "Dicas de sobrevivência para minorias em TI"
+description: "Quem mais aqui é a o único no time?"
 ---
 
 Quem mais aqui é a o único no time?

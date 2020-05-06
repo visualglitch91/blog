@@ -1,10 +1,33 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import styled from "@emotion/styled"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+
+const Title = styled.h1({
+  marginTop: rhythm(1),
+  marginBottom: 0,
+})
+
+const PublishedAt = styled.p({
+  ...scale(-1 / 5),
+  display: `block`,
+  marginBottom: rhythm(1),
+})
+
+const Separator = styled.hr({
+  marginBottom: rhythm(1),
+})
+
+const NavigationList = styled.ul({
+  display: `flex`,
+  flexWrap: `wrap`,
+  justifyContent: `space-between`,
+  listStyle: `none`,
+  padding: 0,
+})
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -19,45 +42,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
+          <Title>{post.frontmatter.title}</Title>
+          <PublishedAt>{post.frontmatter.date}</PublishedAt>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <Separator />
         <footer>
           <Bio />
         </footer>
       </article>
 
       <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <NavigationList>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -72,7 +68,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               </Link>
             )}
           </li>
-        </ul>
+        </NavigationList>
       </nav>
     </Layout>
   )
