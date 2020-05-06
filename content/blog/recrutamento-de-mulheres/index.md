@@ -1,7 +1,7 @@
 ---
 title: Sobre recrutamento de mulheres
 date: "2020-05-06T22:12:03.284Z"
-description: "Os problemas vão muito além do que empresas darem oportunidades, por todas nossas inseguranças, a forma como nós nos expressamos é diferente da dos homens, e isso já os coloca na frente."
+description: "Os problemas vão muito além das empresas darem oportunidades. Por todas nossas inseguranças, a forma como nós nos expressamos é diferente da dos homens, e isso já os coloca na frente."
 ---
 
 Certo dia tive um "almoço das meninas do departamento" e rolaram várias conversas legais sobre recrutamento. Por exemplo, sabemos que mulheres são infinitamente mais modestas no currículo do que homens (cis, brancos, etc), e isso não tem nada a ver com experiência ou conhecimento, é uma simples questão de segurança. Vários estudos mostram como homens se candidatam para vagas que só preenchem alguns dos requisitos, enquanto mulheres geralmente só se candidatam quando cumpre **todos** os requisitos; e isso também vale para o que colocamos no nosso currículo, para o que respondemos em entrevistas, para tudo.
